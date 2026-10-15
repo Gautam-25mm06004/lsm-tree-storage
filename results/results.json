@@ -1,0 +1,154 @@
+{
+  "bloom": [
+    {
+      "bits_per_key": 4,
+      "hashes": 3,
+      "measured_fp_%": 14.824,
+      "theory_fp_%": 14.689
+    },
+    {
+      "bits_per_key": 6,
+      "hashes": 4,
+      "measured_fp_%": 5.51,
+      "theory_fp_%": 5.606
+    },
+    {
+      "bits_per_key": 8,
+      "hashes": 6,
+      "measured_fp_%": 2.088,
+      "theory_fp_%": 2.158
+    },
+    {
+      "bits_per_key": 10,
+      "hashes": 7,
+      "measured_fp_%": 0.826,
+      "theory_fp_%": 0.819
+    },
+    {
+      "bits_per_key": 12,
+      "hashes": 8,
+      "measured_fp_%": 0.29,
+      "theory_fp_%": 0.314
+    },
+    {
+      "bits_per_key": 16,
+      "hashes": 11,
+      "measured_fp_%": 0.044,
+      "theory_fp_%": 0.046
+    }
+  ],
+  "compaction": [
+    {
+      "compaction_trigger": 2,
+      "bloom": true,
+      "sstables": 1,
+      "write_amplification": 50.81,
+      "write_kops_per_s": 5.1,
+      "block_reads_per_get": 0.4,
+      "block_reads_per_missing_get": 0.012,
+      "get_latency_us": 12.3
+    },
+    {
+      "compaction_trigger": 2,
+      "bloom": false,
+      "sstables": 1,
+      "write_amplification": 50.81,
+      "write_kops_per_s": 4.5,
+      "block_reads_per_get": 1.0,
+      "block_reads_per_missing_get": 1.0,
+      "get_latency_us": 11.5
+    },
+    {
+      "compaction_trigger": 4,
+      "bloom": true,
+      "sstables": 1,
+      "write_amplification": 18.69,
+      "write_kops_per_s": 13.8,
+      "block_reads_per_get": 0.4,
+      "block_reads_per_missing_get": 0.012,
+      "get_latency_us": 8.1
+    },
+    {
+      "compaction_trigger": 4,
+      "bloom": false,
+      "sstables": 1,
+      "write_amplification": 18.69,
+      "write_kops_per_s": 11.4,
+      "block_reads_per_get": 1.0,
+      "block_reads_per_missing_get": 1.0,
+      "get_latency_us": 11.3
+    },
+    {
+      "compaction_trigger": 8,
+      "bloom": true,
+      "sstables": 5,
+      "write_amplification": 9.01,
+      "write_kops_per_s": 21.3,
+      "block_reads_per_get": 0.45,
+      "block_reads_per_missing_get": 0.059,
+      "get_latency_us": 22.6
+    },
+    {
+      "compaction_trigger": 8,
+      "bloom": false,
+      "sstables": 5,
+      "write_amplification": 9.01,
+      "write_kops_per_s": 25.6,
+      "block_reads_per_get": 4.97,
+      "block_reads_per_missing_get": 4.991,
+      "get_latency_us": 49.1
+    },
+    {
+      "compaction_trigger": "never",
+      "bloom": true,
+      "sstables": 103,
+      "write_amplification": 2.2,
+      "write_kops_per_s": 110.1,
+      "block_reads_per_get": 1.24,
+      "block_reads_per_missing_get": 1.07,
+      "get_latency_us": 164.5
+    },
+    {
+      "compaction_trigger": "never",
+      "bloom": false,
+      "sstables": 103,
+      "write_amplification": 2.2,
+      "write_kops_per_s": 116.3,
+      "block_reads_per_get": 81.13,
+      "block_reads_per_missing_get": 102.824,
+      "get_latency_us": 918.5
+    }
+  ],
+  "durability": [
+    {
+      "fsync_every_write": false,
+      "writes_per_s": 480808,
+      "mean_latency_us": 2.1
+    },
+    {
+      "fsync_every_write": true,
+      "writes_per_s": 7070,
+      "mean_latency_us": 141.4
+    }
+  ],
+  "recovery": [
+    {
+      "wal_records": 10000,
+      "wal_MB": 0.7,
+      "recovery_s": 0.013,
+      "records_per_s": 777999
+    },
+    {
+      "wal_records": 50000,
+      "wal_MB": 3.6,
+      "recovery_s": 0.058,
+      "records_per_s": 856174
+    },
+    {
+      "wal_records": 200000,
+      "wal_MB": 14.6,
+      "recovery_s": 0.316,
+      "records_per_s": 633694
+    }
+  ]
+}
